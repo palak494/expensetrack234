@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Dashboard</h1>
+
+  <nav style="text-align:center; margin-bottom: 20px;">
+    <a href="index.html">Back to Home</a>
+  </nav>
+
+  <div class="overview">
+    <h2>Overview</h2>
+    <p>Total Income: ₹<span id="total-income">0</span></p>
+    <p>Total Expenses: ₹<span id="total-expenses">0</span></p>
+    <p>Balance: ₹<span id="balance">0</span></p>
+  </div>
+
+  <div class="recent-transactions">
+    <h2>Recent Transactions</h2>
+    <ul id="recent-transactions-list"></ul>
+  </div>
+
+  <div class="charts-section">
+    <h2>Spending Habits</h2>
+    <canvas id="categoryChart" style="max-width:600px; margin: 0 auto;"></canvas>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
